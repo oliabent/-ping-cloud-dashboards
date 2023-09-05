@@ -256,7 +256,7 @@ spec:
               "uid": "${datasource}"
             },
             "editorMode": "code",
-            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",{quantile=\"0\"}",
+            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0\"}",
             "format": "time_series",
             "legendFormat": "Min",
             "range": true,
@@ -268,7 +268,7 @@ spec:
               "uid": "${datasource}"
             },
             "editorMode": "code",
-            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",{quantile=\"0.5\"}",
+            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.5\"}",
             "hide": false,
             "legendFormat": "P50",
             "range": true,
@@ -280,7 +280,7 @@ spec:
               "uid": "${datasource}"
             },
             "editorMode": "code",
-            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",{quantile=\"0.9\"}",
+            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.9\"}",
             "hide": false,
             "legendFormat": "P90",
             "range": true,
@@ -292,7 +292,7 @@ spec:
               "uid": "${datasource}"
             },
             "editorMode": "code",
-            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",{quantile=\"0.99\"}",
+            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"0.99\"}",
             "hide": false,
             "legendFormat": "P99",
             "range": true,
@@ -304,7 +304,7 @@ spec:
               "uid": "${datasource}"
             },
             "editorMode": "code",
-            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",{quantile=\"1\"}",
+            "expr": "karpenter_pods_startup_time_seconds{k8s_cluster_name=~\"$cluster_name\",quantile=\"1\"}",
             "hide": false,
             "legendFormat": "Max",
             "range": true,
