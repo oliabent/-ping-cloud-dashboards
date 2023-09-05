@@ -573,8 +573,8 @@ spec:
           "allValue": ".*",
           "current": {
             "selected": false,
-            "text": "olhachursinova-primary-olhachursinova-primary-us-west-2",
-            "value": "olhachursinova-primary-olhachursinova-primary-us-west-2"
+            "text": "All",
+            "value": "$__all"
           },
           "definition": "label_values(k8s_cluster_name)",
           "hide": 0,
